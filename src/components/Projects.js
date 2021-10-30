@@ -66,7 +66,7 @@ const images = [
       "Timer app, includes a digital clock, a countdown timer and a stopwatch.",
   },
   {
-    label: "League of legends stats",
+    label: "League of Legends stats",
     link: "https://github.com/salgadopietrini/league-of-legends-stats",
     imgPath:
       "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
