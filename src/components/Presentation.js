@@ -2,7 +2,6 @@ import React from "react";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
-import zIndex from "@mui/material/styles/zIndex";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -15,9 +14,9 @@ export default function Presentation() {
   return (
     <div>
       <Stack spacing={2}>
-        <Item style={{ width: "800px" }}>
+        <Item>
           <img
-            width="250px"
+            width="200px"
             style={{
               borderRadius: "50%",
               border: "2px solid",

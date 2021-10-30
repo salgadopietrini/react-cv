@@ -17,29 +17,19 @@ export default function SimpleContainer() {
   return (
     <React.Fragment>
       <CssBaseline />
+      <NavBar navBar={navBar} handleNavBar={handleNavBar} />
       <Container maxWidth="md">
-        <NavBar navBar={navBar} handleNavBar={handleNavBar} />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "70vh",
-          }}
-        >
-          {navBar === 0 ? (
-            <Presentation />
-          ) : navBar === 1 ? (
-            <Projects />
-          ) : navBar === 2 ? (
-            <Experience />
-          ) : navBar === 3 ? (
-            <Education />
-          ) : navBar === 4 ? (
-            <Contacts />
-          ) : null}
-        </div>
+        {navBar === 0 ? (
+          <Presentation />
+        ) : navBar === 1 ? (
+          <Projects />
+        ) : navBar === 2 ? (
+          <Experience />
+        ) : navBar === 3 ? (
+          <Education />
+        ) : navBar === 4 ? (
+          <Contacts />
+        ) : null}
       </Container>
     </React.Fragment>
   );

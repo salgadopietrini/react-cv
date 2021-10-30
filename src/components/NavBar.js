@@ -5,8 +5,15 @@ import Tab from "@mui/material/Tab";
 
 export default function CenteredTabs(props) {
   return (
-    <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
-      <Tabs value={props.navBar} onChange={props.handleNavBar} centered>
+    <Box margin="auto" sx={{ maxWidth: 620, bgcolor: "background.paper" }}>
+      <Tabs
+        variant="scrollable"
+        scrollButtons="auto"
+        aria-label="scrollable auto tabs example"
+        value={props.navBar}
+        onChange={props.handleNavBar}
+        centered
+      >
         <Tab label="About me" />
         <Tab label="Projects" />
         <Tab label="Experience" />

@@ -49,10 +49,7 @@ export default function Experience() {
   ];
 
   return (
-    <List
-      sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}
-      style={{ position: "relative", top: "80px" }}
-    >
+    <List sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
       {experiences.map((elem, index) => (
         <div key={index}>
           <ListItem alignItems="flex-start">

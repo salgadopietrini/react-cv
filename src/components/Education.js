@@ -65,7 +65,7 @@ export default function Education() {
   ];
 
   return (
-    <div style={{ position: "relative", top: "200px" }}>
+    <div>
       <div>
         <h2>Education</h2>
         <List
