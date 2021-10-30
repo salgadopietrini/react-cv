@@ -1,7 +1,11 @@
 import React from "react";
-
+import Container from "./components/Container";
 function App() {
-  return <div>hello world</div>;
+  return (
+    <div>
+      <Container />
+    </div>
+  );
 }
 
 export default App;
