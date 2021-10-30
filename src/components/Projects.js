@@ -20,96 +20,84 @@ const images = [
   {
     label: "Shopping App",
     link: "https://github.com/salgadopietrini/shopping-app",
-    imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/X3QN4XQ/shopping-app.png",
     description:
       "Implementation of an e-shop: loads a bunch of products and lets you save them on your cart, sort by categories, take out items from the cart, and show the total price. Implemented using React Routing and Material UI.",
   },
   {
     label: "Pokedex",
     link: "https://github.com/salgadopietrini/pokedex",
-    imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/9Np1DG2/pokedex.png",
     description:
       "Pokedex app, calls a specific pokemon from the API as the user submits the name and renders its particular info. Shows also a list of pokemons according to their type, allowing the user to select any of them and show their info on the pokedex.",
   },
   {
     label: "Favorite Book Picker",
     link: "https://github.com/salgadopietrini/favorite-picker",
-    imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80",
+    imgPath: "https://i.ibb.co/GvPvK1T/favorite-picker.png",
     description:
       "Lets you search, share on twitter and pick your favorite book. Once in the list, you can click the book and be redirected to the google shop. Developed in group. Uses Context to share between different pages of the app.",
   },
   {
     label: "Personal Portfolio WebPage",
     link: "https://github.com/salgadopietrini/personal-site",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/16dHtvR/personal-site.png",
     description:
       "Personal portfolio site developed under the upgrade-hub bootcamp, implementation of HTML, CSS and SASS tools",
   },
   {
     label: "Contacts app",
     link: "https://github.com/salgadopietrini/contacts-app",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/pvMsL7w/contacts-app.png",
     description:
       "Create, read, edit and delete app for a list of contacts. Uses Context to maintain the information when navigating through different pages with ReactRoute.",
   },
   {
     label: "Timer app",
     link: "https://github.com/salgadopietrini/timer-app",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/TwCr3pn/timer-app.png",
     description:
       "Timer app, includes a digital clock, a countdown timer and a stopwatch.",
   },
   {
     label: "League of Legends stats",
     link: "https://github.com/salgadopietrini/league-of-legends-stats",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/QKXFFPx/lol.png",
     description:
       "League of legends site that aims to provide statistics about the game. Developed by in group using react with TypeScript and class components.",
   },
   {
     label: "React CV",
     link: "https://github.com/salgadopietrini/react-cv",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/Rvmzv2R/react-cv.png",
     description:
       "CV app, renders each part of the CV as a react component. Created using Material UI.",
   },
   {
     label: "Random quote machine",
     link: "https://github.com/salgadopietrini/random-quote-machine",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/yPjtXk8/random-quote-machine.png",
     description:
       "Quotes generator, simple React app developed for freeCodeCamp's frontend libraries certification.",
   },
   {
     label: "Tic-tac-toe game",
     link: "https://github.com/salgadopietrini/tic-tac-toe-game",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/sK4c69y/tic-tac-toe-game.png",
     description:
       "Old tic-tac-toe game developed using react, developed in group.",
   },
   {
     label: "Keeper app aditions",
     link: "https://github.com/salgadopietrini/keeper-app",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/BPSs4gf/keeper-app.png",
     description:
       "Clone of the Google app Keep, delete function, edit functionality, color picker and dark mode implemented by me",
   },
   {
     label: "Weather app aditions",
     link: "https://github.com/salgadopietrini/weather-app-edition",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath: "https://i.ibb.co/WFHnccF/weather-app.png",
     description:
       "Clone of an already existing weather app that uses Redux to control the states of all components and saves things on the localStorage. Added a local time functionality, aiming to practice Redux.",
   },

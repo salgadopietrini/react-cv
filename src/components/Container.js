@@ -18,6 +18,7 @@ export default function SimpleContainer() {
     <React.Fragment>
       <CssBaseline />
       <NavBar navBar={navBar} handleNavBar={handleNavBar} />
+      <br />
       <Container maxWidth="md">
         {navBar === 0 ? (
           <Presentation />
