@@ -11,7 +11,6 @@ import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import Container from "@mui/material/Container";
 import CssBaseline from "@mui/material/CssBaseline";
-import { stepConnectorClasses } from "@mui/material";
 import Link from "@mui/material/Link";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
@@ -39,7 +38,7 @@ const images = [
       "Lets you search, share on twitter and pick your favorite book. Once in the list, you can click the book and be redirected to the google shop. Developed in group. Uses Context to share between different pages of the app.",
   },
   {
-    label: "Personal Portfolio WebPage",
+    label: "Personal Portfolio",
     link: "https://github.com/salgadopietrini/personal-site",
     imgPath: "https://i.ibb.co/16dHtvR/personal-site.png",
     description:
@@ -124,130 +123,147 @@ export default function Projects() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-          <Paper
-            square
-            elevation={0}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              height: 50,
-              pl: 2,
-              bgcolor: "background.default",
-            }}
-          >
-            <Typography>
-              <h2>{images[activeStep].label}</h2>
-            </Typography>
-          </Paper>
-          <AutoPlaySwipeableViews
-            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-            index={activeStep}
-            onChangeIndex={handleStepChange}
-            enableMouseEvents
-          >
-            {images.map((step, index) => (
-              <div key={step.label}>
-                {Math.abs(activeStep - index) <= 2 ? (
-                  <Box
-                    component="img"
-                    sx={{
-                      height: 255,
-                      display: "block",
-                      maxWidth: 400,
-                      overflow: "hidden",
-                      width: "100%",
-                    }}
-                    src={step.imgPath}
-                    alt={step.label}
-                  />
-                ) : null}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+            <Paper
+              square
+              elevation={0}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                height: 50,
+                pl: 2,
+                bgcolor: "background.default",
+              }}
+            >
+              <div
+                style={{
+                  width: "100%",
+                  margin: 0,
+                  textAlign: "center",
+                }}
+              >
+                <Typography>
+                  <h2>{images[activeStep].label}</h2>
+                </Typography>
               </div>
-            ))}
-          </AutoPlaySwipeableViews>
-          <AutoPlaySwipeableViews
-            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-            index={activeStep}
-            onChangeIndex={handleStepChange}
-            enableMouseEvents
-          >
-            {images.map((step, index) => (
-              <div key={step.label}>
-                {Math.abs(activeStep - index) <= 2 ? (
+            </Paper>
+            <AutoPlaySwipeableViews
+              axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+              index={activeStep}
+              onChangeIndex={handleStepChange}
+              enableMouseEvents
+            >
+              {images.map((step, index) => (
+                <div key={step.label}>
+                  {Math.abs(activeStep - index) <= 2 ? (
+                    <Box
+                      component="img"
+                      sx={{
+                        height: 255,
+                        display: "block",
+                        maxWidth: 400,
+                        overflow: "hidden",
+                        width: "100%",
+                      }}
+                      src={step.imgPath}
+                      alt={step.label}
+                    />
+                  ) : null}
+                </div>
+              ))}
+            </AutoPlaySwipeableViews>
+            <AutoPlaySwipeableViews
+              axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+              index={activeStep}
+              onChangeIndex={handleStepChange}
+              enableMouseEvents
+            >
+              {images.map((step, index) => (
+                <div key={step.label}>
+                  {Math.abs(activeStep - index) <= 2 ? (
+                    <Box
+                      component="text"
+                      sx={{
+                        height: 150,
+                        display: "block",
+                        maxWidth: 400,
+                        paddingLeft: "35px",
+                        paddingRight: "35px",
+                        overflow: "hidden",
+                        width: "100%",
+                      }}
+                    >
+                      <Typography
+                        sx={{ display: "inline" }}
+                        component="span"
+                        variant="body2"
+                        color="text.primary"
+                      >
+                        <br />
+                        {step.description}
+                      </Typography>
+                    </Box>
+                  ) : null}
                   <Box
                     component="text"
                     sx={{
-                      height: 150,
+                      height: 50,
                       display: "block",
                       maxWidth: 400,
                       overflow: "hidden",
                       width: "100%",
-                      textAlign: "justify",
+                      textAlign: "center",
                     }}
                   >
-                    <Typography
-                      sx={{ display: "inline" }}
-                      component="span"
-                      variant="body2"
-                      color="text.primary"
-                    >
-                      <br />
-                      {step.description}
-                    </Typography>
+                    <br />
+                    <Link href={step.link} target="_blank" underline="hover">
+                      Check repository
+                    </Link>
                   </Box>
-                ) : null}
-                <Box
-                  component="text"
-                  sx={{
-                    height: 50,
-                    display: "block",
-                    maxWidth: 400,
-                    overflow: "hidden",
-                    width: "100%",
-                    textAlign: "center",
-                  }}
+                </div>
+              ))}
+            </AutoPlaySwipeableViews>
+            <MobileStepper
+              steps={maxSteps}
+              position="static"
+              activeStep={activeStep}
+              nextButton={
+                <Button
+                  size="small"
+                  onClick={handleNext}
+                  disabled={activeStep === maxSteps - 1}
                 >
-                  <Link href={step.link} target="_blank" underline="hover">
-                    Check repository
-                  </Link>
-                </Box>
-              </div>
-            ))}
-          </AutoPlaySwipeableViews>
-          <MobileStepper
-            steps={maxSteps}
-            position="static"
-            activeStep={activeStep}
-            nextButton={
-              <Button
-                size="small"
-                onClick={handleNext}
-                disabled={activeStep === maxSteps - 1}
-              >
-                Next
-                {theme.direction === "rtl" ? (
-                  <KeyboardArrowLeft />
-                ) : (
-                  <KeyboardArrowRight />
-                )}
-              </Button>
-            }
-            backButton={
-              <Button
-                size="small"
-                onClick={handleBack}
-                disabled={activeStep === 0}
-              >
-                {theme.direction === "rtl" ? (
-                  <KeyboardArrowRight />
-                ) : (
-                  <KeyboardArrowLeft />
-                )}
-                Back
-              </Button>
-            }
-          />
-        </Box>
+                  Next
+                  {theme.direction === "rtl" ? (
+                    <KeyboardArrowLeft />
+                  ) : (
+                    <KeyboardArrowRight />
+                  )}
+                </Button>
+              }
+              backButton={
+                <Button
+                  size="small"
+                  onClick={handleBack}
+                  disabled={activeStep === 0}
+                >
+                  {theme.direction === "rtl" ? (
+                    <KeyboardArrowRight />
+                  ) : (
+                    <KeyboardArrowLeft />
+                  )}
+                  Back
+                </Button>
+              }
+            />
+          </Box>
+        </div>
       </Container>
     </React.Fragment>
   );

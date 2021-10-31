@@ -49,58 +49,66 @@ export default function Experience() {
   ];
 
   return (
-    <List sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
-      {experiences.map((elem, index) => (
-        <div key={index}>
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar alt="Company Logo" src={elem.logo} />
-            </ListItemAvatar>
-            <ListItemText
-              primary={<b>{elem.title}</b>}
-              secondary={
-                <React.Fragment>
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    {elem.company}
-                  </Typography>
-                  <br />
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    {elem.period}
-                  </Typography>
-                  <br />
-                  <Typography
-                    sx={{ display: "inline" }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    {elem.location}
-                  </Typography>
-                  <br />
-                  {
-                    <ul>
-                      {elem.duties.map((duty) => (
-                        <li>{duty}</li>
-                      ))}
-                    </ul>
-                  }
-                </React.Fragment>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-        </div>
-      ))}
-    </List>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <List sx={{ width: "100%", maxWidth: 600, bgcolor: "background.paper" }}>
+        {experiences.map((elem, index) => (
+          <div key={index}>
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar alt="Company Logo" src={elem.logo} />
+              </ListItemAvatar>
+              <ListItemText
+                primary={<b>{elem.title}</b>}
+                secondary={
+                  <React.Fragment>
+                    <Typography
+                      sx={{ display: "inline" }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      {elem.company}
+                    </Typography>
+                    <br />
+                    <Typography
+                      sx={{ display: "inline" }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      {elem.period}
+                    </Typography>
+                    <br />
+                    <Typography
+                      sx={{ display: "inline" }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      {elem.location}
+                    </Typography>
+                    <br />
+                    {
+                      <ul>
+                        {elem.duties.map((duty) => (
+                          <li>{duty}</li>
+                        ))}
+                      </ul>
+                    }
+                  </React.Fragment>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" component="li" />
+          </div>
+        ))}
+      </List>
+    </div>
   );
 }

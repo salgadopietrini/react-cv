@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import Education from "./Education";
 import Contacts from "./Contact";
+import Certifications from "./Certifications";
 
 export default function SimpleContainer() {
   const [navBar, setNavBar] = useState(0);
@@ -29,6 +30,8 @@ export default function SimpleContainer() {
         ) : navBar === 3 ? (
           <Education />
         ) : navBar === 4 ? (
+          <Certifications />
+        ) : navBar === 5 ? (
           <Contacts />
         ) : null}
       </Container>
