@@ -1,4 +1,4 @@
-# react-cv is my cv rendered as a React APP.
+# react-cv is my cv rendered as a React App.
 
 Mostly composed of static react components. Uses Material UI to all the stylings. Inspired on linkedIn styles and formats. Fully responsive.
 
