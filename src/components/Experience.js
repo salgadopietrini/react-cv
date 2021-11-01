@@ -38,7 +38,7 @@ export default function Experience() {
       logo: "https://media-exp1.licdn.com/dms/image/C4E0BAQFG6cbooVqKCw/company-logo_100_100/0/1548276943462?e=1643846400&v=beta&t=rfoSVVbcJiDl6m2Cc_X8OJa0p2Gv4S-FduC1ajBi1_4",
       period: "Jan 2015 - Dec 2015",
       title: "Engineer Assistant",
-      location: "Porto - Portugal",
+      location: "Caracas - Venezuela",
       duties: [
         "Assistance in product selection (pumps, compressors and motors), contact suppliers",
         "Data management",
